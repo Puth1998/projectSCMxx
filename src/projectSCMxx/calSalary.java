@@ -26,7 +26,7 @@ public class calSalary {
 
 	public double sumsalary() {
 		double sumsalary = 0;
-		if( this.sales >= 1 && this.sales <= 50000){
+		if( this.sales >= 1 && this.sales <= 100000){
 			sumsalary = (int) (this.sales*0.05);
 		}else {
 			sumsalary = (int) (this.sales*0.10);
