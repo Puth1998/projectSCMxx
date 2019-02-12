@@ -25,14 +25,19 @@ public class calSalary {
 	
 
 	public double sumsalary() {
-		double sumsalary = 0;
-		if( this.sales >= 1 && this.sales <= 100000){
+		double sumsalary = 0 , sum = 0;
+		if( this.sales >= 1 && this.sales <= 50000){
 			sumsalary = (int) (this.sales*0.05);
 		}else {
 			sumsalary = (int) (this.sales*0.10);
 		}
+		sum = sumsalary+this.salary;
+		
+		if(sum<20000) {
+			sum = 20000;
+		}
 
-		return sumsalary+this.salary;
+		return sum;
 	}
 
 }
