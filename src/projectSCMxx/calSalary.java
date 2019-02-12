@@ -33,8 +33,8 @@ public class calSalary {
 		}
 		sum = sumsalary+this.salary;
 		
-		if(sum<20000) {
-			sum = 20000;
+		if(this.salary<15000 && this.sales > 100000) {
+			sum = sum+5000;
 		}
 
 		return sum;
